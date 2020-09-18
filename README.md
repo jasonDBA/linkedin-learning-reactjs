@@ -49,3 +49,31 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+### Composing Components
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+function Person(props) {
+  return(
+    <h1>{props.name}</h1> 
+  );
+}
+
+function Application() {
+  return(
+    <div>
+      <Person name="Jason"/>
+      <Person name="Smith"/>
+      <Person name="Steven"/>
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <Application />,
+  document.getElementById('root')
+);
+```
