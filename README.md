@@ -79,7 +79,7 @@ ReactDOM.render(
 ```
 
 ### Rendering Lists
-```javavscript
+```javascript
 const lakeList = [
   "Echo Lake",
   "Ontario Lake",
