@@ -77,3 +77,29 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+### Rendering Lists
+```javavscript
+const lakeList = [
+  "Echo Lake",
+  "Ontario Lake",
+  "Niagara Lake"
+];
+
+function Application(props) {
+  return(
+    <div>
+      <ul>
+        {props.lakes.map(x => (
+          <li>{x}</li> 
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <Application lakes={lakeList} />,
+  document.getElementById('root')
+);
+```
