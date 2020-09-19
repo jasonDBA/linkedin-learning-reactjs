@@ -103,3 +103,32 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+### Rendering lists of objects
+```javascript
+const users = [
+  {id: "1", name: "Jason", depart: "Development"},
+  {id: "2", name: "Smith", depart: "Finance"},
+  {id: "3", name: "John", depart: "Human Resources"}
+];
+
+function Application(props) {
+  return(
+    <div>
+      <h1>Party Memebers</h1>
+      {props.userDB.map(x => (
+        <div>
+          <h3>Name: {x.name}</h3>
+          <p>Department: {x.depart}</p>
+          <hr/>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <Application userDB={users} />,
+  document.getElementById('root')
+);
+```
