@@ -132,3 +132,26 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+###Adding Keys
+```javascript
+const list = [1,2,3,4,5];
+
+function Application({items}) {
+  return(
+    <ul>
+      {/* {items.map((item, i) => (
+        <li key={i}>{item}</li>
+      ))} */}
+      {items.map(item => (
+        <li key={item.toString()}>{item}</li>
+      ))}
+    </ul>
+  );
+}
+
+ReactDOM.render(
+  <Application items={list} />,
+  document.getElementById('root')
+);
+```
