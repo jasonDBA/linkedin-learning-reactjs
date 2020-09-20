@@ -155,3 +155,31 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+### Conditional Rendering
+```javascript
+function Summersports({name}){
+  return(
+    <h1>I do want to play {name}!</h1>
+  ); 
+}
+
+function Wintersports({name}){
+  return(
+    <h1>I do want to play {name}!</h1>
+  );
+}
+
+function Application(props) {
+  if(props.season === "summer"){
+    return <Summersports name="tennis"/>
+  } else if(props.season === "winter"){
+    return <Wintersports name="table tennis"/>
+  }
+}
+
+ReactDOM.render(
+  <Application season="summer" />,
+  document.getElementById('root')
+);
+```
