@@ -185,8 +185,8 @@ ReactDOM.render(
 ```
 
 ### React.Fragment
-* When you want components to return multiple elements in React, they must be wrapped by <div>, for example.
-* If using <React.Fragment>, you can avoid having too many <div>.
+* When you want components to return multiple elements in React, they must be wrapped by div, for example.
+* If using <React.Fragment>, you can avoid having too many div.
 * A short syntax: <> </>
 ```javascript
 function App(){
