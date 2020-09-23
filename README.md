@@ -15,7 +15,7 @@
 npm install lite-server --save-dev
 ```
 2. In package.json, add the two lines under "scripts" and save it as follows:
-```
+```json
 "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
