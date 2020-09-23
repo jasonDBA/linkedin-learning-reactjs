@@ -7,6 +7,12 @@
 * A package contains:
   * JS files
   * package.json
+  
+### What is lite server?
+* A lightweight development web server with support for Single Page Apps
+```cmd
+npm install lite-server --save-dev
+```
 
 ### React.createElement()
 * Create and return a new React element
