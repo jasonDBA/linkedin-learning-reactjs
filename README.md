@@ -8,11 +8,21 @@
   * JS files
   * package.json
   
-### What is lite server?
-* A lightweight development web server with support for Single Page Apps
-```cmd
+### Setting up lite server?
+* Lite Server: A lightweight development web server with support for Single Page Apps
+1. Install lite-server package in npm
+```
 npm install lite-server --save-dev
 ```
+2. In package.json, add the two lines under "scripts" and save it as follows:
+```
+"scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  }
+```
+3. Run 'npm start' in the project dir
 
 ### React.createElement()
 * Create and return a new React element
