@@ -2,6 +2,12 @@
 
 ## What did you learn?
 
+### What is NPM?
+* NPM (Node Package Manager): manages ecosystem of node packages / modules
+* A package contains:
+- JS files
+- package.json
+
 ### React.createElement()
 * Create and return a new React element
 * Code written with JSX will be converted to use React.createElement()
